@@ -1,0 +1,53 @@
+
+@import url("header.css");
+@import url("footer.css");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+body{
+    width: 900px;
+}
+
+#slide{
+    width: 100%;
+    display: flex;
+    
+}
+#slide div{
+    padding: 2em;
+}
+#slide img{
+    width: 15em;
+}
+
+#slide-section{ 
+
+    box-shadow: 0 4px 2px -2px hsla(0,0%,76.9%,.25);
+    margin-bottom: 1em;
+}
+
+#category {
+    margin-top: 1em;
+    display: flex;
+}
+#category img{
+    width: 10em; 
+}
+#category div span{
+    display: block;
+
+    font-size: 12px;
+    padding-left: .5em;
+    padding-bottom: .5em;
+}
+
+#category div{
+    border: 1px solid hsla(0,0%,76.9%,.25);
+    border-radius: .5em;
+    box-shadow: 0 4px 2px -2px hsla(0,0%,76.9%,.25);
+  
+}

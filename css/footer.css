@@ -1,0 +1,27 @@
+
+#rating{
+    display: flex;
+    margin-top: 25px;
+    background-color: #fff8ef;
+    border-top: 2px solid #ffecd4;
+    border-bottom: 2px solid #ffecd4;
+    padding: 24px 60px;
+}
+
+footer{
+    margin-top: 1em; 
+}
+
+footer ul li{
+    list-style-type: none;
+   
+}
+
+#footer-info{
+    display: flex;
+}
+
+footer a{
+    font-size: .8em;
+}
+
