@@ -2,6 +2,9 @@
 @import url("footer.css");
 @import url("style.css");
 
+#logo-bar{
+    margin-bottom: 2em;
+}
 #form {
   border: #55727b;
   color: #7e3e1b;
@@ -74,6 +77,7 @@
   text-decoration: none;
   color: #fff;
   cursor: pointer;
+  margin-left: 20em;
 }
 
 #form h3 {
@@ -87,4 +91,7 @@ input:focus {
 
 input[type="radio"] {
   vertical-align: middle;
+}
+.statusMessage{
+    color: red;
 }

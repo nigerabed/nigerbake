@@ -19,24 +19,16 @@
       src="https://kit.fontawesome.com/0c867d7837.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="orderForm.js"></script>
   </head>
   <body>
     <header>
       <div id="logo-bar">
-        <div id="logo">Niger Bake</div>
+        <div id="logo"><a href="index.html">Niger Bake</a></div>
         <div>
           <a href="" id="order"> Bestil her </a>
         </div>
       </div>
-
-      <nav>
-        <ul>
-          <li><a href="">Flavor</a></li>
-          <li><a href="">Kids Cake</a></li>
-          <li><a href="">Wedding Cake</a></li>
-          <li><a href="">Birthday Cake</a></li>
-        </ul>
-      </nav>
     </header>
 
     <main>
@@ -46,16 +38,31 @@
           <section id="contact">
             <label>
               <span>Full Name:</span>
-              <input type="text" required />
+              <input
+                type="text"
+                name="name"
+                minlength="3"
+                maxlength="15"
+                required
+              />
+              <div class="statusMessage"></div>
             </label>
 
             <label
               ><span>Address:</span>
-              <input type="text" required />
+              <input type="text" name="address" required />
+              <div class="statusMessage"></div>
             </label>
             <label
               ><span>Phone Number:</span>
-              <input type="tel" required />
+              <input
+                type="tel"
+                name="phone"
+                minlength="3"
+                maxlength="15"
+                required
+              />
+              <div class="statusMessage"></div>
             </label>
           </section>
 
@@ -63,12 +70,14 @@
           <section id="myOrder">
             <div class="itemSection">
               <label>
-                <span>Person:</span><input type="number" required />
-            </label>
+                <span>Person:</span
+                ><input type="number" name="personQuantity" required />
+                <div class="statusMessage"></div>
+              </label>
 
               <label>
                 <span>Flavour</span>
-                <select>
+                <select name="flavour">
                   <option value="">- Select a flavour -</option>
                   <option value="Chokolate">Chokolate</option>
                   <option value="Vanilla">Vanilla</option>
@@ -76,31 +85,39 @@
                   <option value="Red velvet">Red velvet</option>
                   <option value="Lemon">Lemon</option>
                 </select>
+                <div class="statusMessage"></div>
               </label>
 
               <label>
                 <span>Delivery Date:</span>
-                <input type="date" required />
+                <input type="date" name="deliveryDate" required />
+                <div class="statusMessage"></div>
               </label>
-
-             
             </div>
             <div class="paymentSection">
               <label>
                 <span>Delivery Option</span>
-                
-                <input type="radio" name="delivery-option" /><span class="inputText">Pick up (<b>0kr</b>)</span>
-                <input type="radio" name="delivery-option" /><span class="inputText">Home delivery( <b>50kr</b>)</span>
+
+                <input type="radio" name="delivery-option" />
+                <div class="statusMessage"></div>
+                <span class="inputText">Pick up (<b>0kr</b>)</span>
+                <input type="radio" name="delivery-option" />
+                <div class="statusMessage"></div>
+                <span class="inputText">Home delivery( <b>50kr</b>)</span>
               </label>
 
               <label>
                 <span> Payment</span>
-                <input type="radio" name="payment-option" /><span class="inputText">MobilePay</span>
-                <input type="radio" name="payment-option" /><span class="inputText">Cash on delivery</span>
+                <input type="radio" name="payment-option" />
+                <div class="statusMessage"></div>
+                <span class="inputText">MobilePay</span>
+                <input type="radio" name="payment-option" />
+                <div class="statusMessage"></div>
+                <span class="inputText">Cash on delivery</span>
               </label>
             </div>
           </section>
-           <button class="submitBtn" type="submit">Submit</button>
+          <button class="submitBtn" type="submit">Submit</button>
         </fieldset>
       </form>
     </main>

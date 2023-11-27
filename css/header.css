@@ -1,9 +1,12 @@
-header {
-}
+
 
 #logo-bar {
   display: flex;
   margin-bottom: 1em;
+}
+#logo a{
+  color: rgb(174, 85, 52);
+  text-decoration: none;
 }
 nav {
   background-color: rgb(255, 255, 255);
