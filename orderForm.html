@@ -1,13 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bestil her</title>
-    <link rel="stylesheet" href="css/orderForm.css">
-    
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="css/orderForm.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Dancing+Script&family=Gluten:wght@300&family=Merriweather+Sans:ital@1&family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat:wght@400;500&family=Dancing+Script&family=Gluten:wght@300&family=Merriweather+Sans:ital@1&family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0c867d7837.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div id="logo-bar">
+        <div id="logo">Niger Bake</div>
+        <div>
+          <a href="" id="order"> Bestil her </a>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="">Flavor</a></li>
+          <li><a href="">Kids Cake</a></li>
+          <li><a href="">Wedding Cake</a></li>
+          <li><a href="">Birthday Cake</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form id="form" novalidate>
+        <fieldset>
+          <legend>Order your cake</legend>
+          <section id="contact">
+            <label>
+              <span>Full Name:</span>
+              <input type="text" required />
+            </label>
+
+            <label
+              ><span>Address:</span>
+              <input type="text" required />
+            </label>
+            <label
+              ><span>Phone Number:</span>
+              <input type="tel" required />
+            </label>
+          </section>
+
+          <h3>My Order</h3>
+          <section id="myOrder">
+            <div class="itemSection">
+              <label>
+                <span>Person:</span><input type="number" required />
+            </label>
+
+              <label>
+                <span>Flavour</span>
+                <select>
+                  <option value="">- Select a flavour -</option>
+                  <option value="Chokolate">Chokolate</option>
+                  <option value="Vanilla">Vanilla</option>
+                  <option value="Caramel">Caramel</option>
+                  <option value="Red velvet">Red velvet</option>
+                  <option value="Lemon">Lemon</option>
+                </select>
+              </label>
+
+              <label>
+                <span>Delivery Date:</span>
+                <input type="date" required />
+              </label>
+
+             
+            </div>
+            <div class="paymentSection">
+              <label>
+                <span>Delivery Option</span>
+                
+                <input type="radio" name="delivery-option" /><span class="inputText">Pick up (<b>0kr</b>)</span>
+                <input type="radio" name="delivery-option" /><span class="inputText">Home delivery( <b>50kr</b>)</span>
+              </label>
+
+              <label>
+                <span> Payment</span>
+                <input type="radio" name="payment-option" /><span class="inputText">MobilePay</span>
+                <input type="radio" name="payment-option" /><span class="inputText">Cash on delivery</span>
+              </label>
+            </div>
+          </section>
+           <button class="submitBtn" type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </main>
+
+    <footer>
+      <div id="rating">
+        <span><i class="fa-solid fa-truck"></i> 100% On Time Delivery</span>
+        <span>
+          <i class="fa-solid fa-cake-candles"></i> 100% Fresh & Hygienic</span
+        >
+        <span><i class="fa-solid fa-circle-check"></i> CakeBoss Certified</span>
+      </div>
+
+      <div id="footer-info">
+        <div>
+          <div id="logo">Niger Bake</div>
+        </div>
+        <div>
+          <p>Know Us</p>
+
+          <ul>
+            <li>
+              <a href="">Our Sotry</a>
+            </li>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">Need Help</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>More Info</p>
+
+          <ul>
+            <li>
+              <a href="">Offer</a>
+            </li>
+            <li><a href="">Franchise</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

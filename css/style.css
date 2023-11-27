@@ -1,68 +1,67 @@
-
 @import url("header.css");
 @import url("footer.css");
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    margin: auto;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  margin: auto;
 }
 
-body{
-    width: 100%;
-   margin-bottom: 10em;
+body {
+  width: 100%;
+  margin-bottom: 10em;
 }
-main{
-    width: 90%;
+main {
+  width: 90%;
 }
 
-#slide{
-    width: 100%;
-    display: flex;
-    
+#slide {
+  width: 100%;
+  display: flex;
 }
-#slide div{
-    padding: 2em;
+#slide div {
+  padding: 2em;
 }
-#slide img{
-    width: 25em;
+#slide img {
+  width: 25em;
 }
-#slide-section{ 
-
-    box-shadow: 0 4px 2px -2px hsla(0,0%,76.9%,.25);
-    margin-bottom: 1em;
+#slide-section {
+  box-shadow: 0 4px 2px -2px hsla(0, 0%, 76.9%, 0.25);
+  margin-bottom: 1em;
 }
-#slide-section img{
-    height: 26em;
-    object-fit: cover;
+#slide-section img {
+  height: 26em;
+  object-fit: cover;
 }
 
 #category {
-    margin-top: 1em;
-    display: flex;
-    background-color: rgb(241, 236, 236);
-    padding: 1em;
-  
+  margin-top: 1em;
+  display: flex;
+  background-color: rgb(241, 236, 236);
+  padding: 1em;
 }
-#category img{
-    width: 15em;
-    height: 18em; 
-    object-fit: cover;
+#category img {
+  width: 15em;
+  height: 18em;
+  object-fit: cover;
 }
-#category div p{
-    display: block;
+#category a {
+  text-decoration: none;
+}
+#category div p {
+  display: block;
 
-    font-size: 1.2em;
-    padding-left: .5em;
-    padding-bottom: .5em;
+  font-size: 1.2em;
+  padding-left: 0.5em;
+  padding-bottom: 0.5em;
 }
-#category div p span:hover{
-     border-bottom: 2px solid red;
+#category div p span:hover {
+  border-bottom: 2px solid red;
 }
 
-#category div{
-    border: 1px solid hsla(0,0%,76.9%,.25);
-    border-radius: .5em;
-    box-shadow: 0 4px 2px -2px hsla(0,0%,76.9%,.25);
-  
+#category div {
+  border: 1px solid hsla(0, 0%, 76.9%, 0.25);
+  border-radius: 0.5em;
+  box-shadow: 0 4px 2px -2px hsla(0, 0%, 76.9%, 0.25);
 }
+

@@ -1,0 +1,90 @@
+@import url("header.css");
+@import url("footer.css");
+@import url("style.css");
+
+#form {
+  border: #55727b;
+  color: #7e3e1b;
+
+  font-size: 1.08em;
+}
+#form fieldset {
+  width: 60%;
+  padding: 20px;
+  background-color: #fff9e9;
+}
+#form label {
+  display: block;
+  margin: 1px 0px;
+  font-weight: 600;
+  padding: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8em;
+}
+
+#form label span {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.2em;
+}
+
+#contact input,
+#myOrder input,
+#myOrder select {
+  height: 2.5em;
+  width: 90%;
+  padding-left: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+#myOrder {
+  margin: 1em;
+  background-color: #f7ecd1;
+  display: flex;
+  align-items: flex-start;
+}
+
+.paymentSection input {
+  width: 1.5em !important;
+  height: 2em !important;
+}
+.inputText {
+  font-weight: normal;
+  display: inline-block !important;
+  padding: 10px;
+}
+.paymentSection {
+  width: 50%;
+}
+
+.itemSection {
+  width: 50%;
+}
+
+.submitBtn {
+  border-color: #e5dfe0;
+  font-size: 1em;
+  font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif !important;
+  border: 1px solid #3b3a3a;
+  background-color: rgb(141, 83, 28);
+  padding: 0.4em 0.8em;
+  border-radius: 1em;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+#form h3 {
+  padding-left: 1em;
+  font-size: 1.5em;
+}
+
+input:focus {
+  box-shadow: 0 0 5pt 2pt #d3d3d3;
+}
+
+input[type="radio"] {
+  vertical-align: middle;
+}
