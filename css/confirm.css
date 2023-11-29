@@ -1,0 +1,15 @@
+#confirm p{
+
+    margin: 1em;
+    color: #333;
+    font-size: 1.2em;
+}
+
+#confirm p span{
+
+    font-weight: 600;
+    color: brown;
+    width: 5em; 
+    display: inline-block;
+
+}
