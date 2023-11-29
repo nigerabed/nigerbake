@@ -34,9 +34,18 @@ footer div p{
 #footer-info{
     margin-top: 1em;
     display: flex;
+     
 }
 
 footer a{
     font-size: 1em;
+}
+
+#socialInfo{
+    display: flex;
+}
+
+#contactUs{
+  margin-top: 2.5em;
 }
 

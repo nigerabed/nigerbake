@@ -10,9 +10,12 @@
 body {
   width: 100%;
   margin-bottom: 10em;
+  background-color: #eeeaea;
 }
 main {
   width: 90%;
+  background-color: #D3D3D3;
+  margin-top: 2em;
 }
 
 #slide {
@@ -32,6 +35,17 @@ main {
 #slide-section img {
   height: 26em;
   object-fit: cover;
+  border-radius: 1em;
+  border: 1px solid #898686;
+}
+
+section h2{
+    padding-left: 1em;
+    color: rgb(128, 64, 41);
+   
+}
+#categorySection a h2 span:hover{
+    border-bottom: 2px solid red;
 }
 
 #category {
@@ -44,6 +58,9 @@ main {
   width: 15em;
   height: 18em;
   object-fit: cover;
+    border-radius: 1em;
+  border: 1px solid #898686;
+
 }
 #category a {
   text-decoration: none;
