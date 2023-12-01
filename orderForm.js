@@ -17,7 +17,7 @@ function submitHandler(event) {
   success = true;
 
   let arryData = Array.from(event.target);
-  console.log(arryData);
+
 
   // check validation
   arryData.forEach(validate);
@@ -30,7 +30,7 @@ function submitHandler(event) {
     form.submit();
   }
 
-  form.submit();
+ 
 }
 
 function validate(field) {
