@@ -25,112 +25,110 @@
     <header>
       <div id="logo-bar">
         <div id="logo"><a href="index.html">Niger Bake</a></div>
-        <div>
-          <a href="" id="order"> Bestil her </a>
-        </div>
       </div>
     </header>
 
     <main>
-
-
-
-    <article id="orderFrom">
-      <form id="form" method="get" novalidate action="orderConfirm.html">
-        <fieldset>
-          <legend>Order your cake</legend>
-          <section id="contact">
-            <label>
-              <span>Full Name:</span>
-              <input type="text" name="name" />
-              <p class="statusMessage"></p>
-            </label>
-
-            <label
-              ><span>Address:</span>
-              <input type="text" name="address" required />
-              <p class="statusMessage"></p>
-            </label>
-            <label
-              ><span>Phone Number:</span>
-              <input
-                type="tel"
-                name="phone"
-                minlength="3"
-                maxlength="15"
-                required
-              />
-              <p class="statusMessage"></p>
-            </label>
-          </section>
-
-          <h3>My Order</h3>
-          <section id="myOrder">
-            <div class="itemSection">
+      <article id="orderFrom">
+        <form id="form" method="get" novalidate action="Confirm.html">
+          <fieldset>
+            <legend>Order your cake</legend>
+            <section id="contact">
               <label>
-                <span>Person:</span
-                ><input type="number" name="personQuantity" required />
+                <span>Full Name:</span>
+                <input type="text" name="name" />
+                <p class="statusMessage"></p>
+              </label>
+
+              <label
+                ><span>Address:</span>
+                <input type="text" name="address" required />
                 <p class="statusMessage"></p>
               </label>
 
               <label>
-                <span>Flavour</span>
-                <select name="flavour">
-                  <option value="">- Select a flavour -</option>
-                  <option value="Chokolate">Chokolate</option>
-                  <option value="Vanilla">Vanilla</option>
-                  <option value="Caramel">Caramel</option>
-                  <option value="Red velvet">Red velvet</option>
-                  <option value="Lemon">Lemon</option>
-                </select>
+                <span>Email:</span>
+                <input type="email" name="email" required />
                 <p class="statusMessage"></p>
               </label>
-
-              <label>
-                <span>Delivery Date:</span>
-                <input type="date" name="deliveryDate" required />
+              <label
+                ><span>Phone Number:</span>
+                <input
+                  type="tel"
+                  name="phone"
+                  minlength="3"
+                  maxlength="15"
+                  required
+                />
                 <p class="statusMessage"></p>
               </label>
-            </div>
-            <div class="paymentSection">
-              <label>
-                <span>Delivery Option</span>
+            </section>
 
-                <label class="inputText">
-                  <input type="radio" name="delivery-option" />
-                  Pick up (<b>0kr</b>)
+            <h3>My Order</h3>
+            <section id="myOrder">
+              <div class="itemSection">
+                <label>
+                  <span>Cake for how many Person:</span
+                  ><input type="number" name="personQuantity" required />
                   <p class="statusMessage"></p>
                 </label>
 
-                <label class="inputText">
-                  <input type="radio" name="delivery-option" />
-                  Home delivery( <b>50kr</b>)
-                  <p class="statusMessage"></p>
-                </label>
-              </label>
-
-              <label>
-                <span> Payment</span>
-                <label class="inputText">
-                  <input type="radio" name="payment-option" />
-                  MobilePay
+                <label>
+                  <span>Flavour</span>
+                  <select name="flavour">
+                    <option value="">- Select a flavour -</option>
+                    <option value="Chokolate">Chokolate</option>
+                    <option value="Vanilla">Vanilla</option>
+                    <option value="Caramel">Caramel</option>
+                    <option value="Red velvet">Red velvet</option>
+                    <option value="Lemon">Lemon</option>
+                  </select>
                   <p class="statusMessage"></p>
                 </label>
 
-                <label class="inputText">
-                  <input type="radio" name="payment-option" />
-                  Cash on delivery
+                <label>
+                  <span>Delivery Date:</span>
+                  <input type="date" name="deliveryDate" required />
                   <p class="statusMessage"></p>
                 </label>
-              </label>
-            </div>
-          </section>
-          <button class="submitBtn" type="submit">Submit</button>
-        </fieldset>
-      </form>
-    </article>
+              </div>
+              <div class="paymentSection">
+                <label>
+                  <span>Delivery Option</span>
 
-      
+                  <label class="inputText">
+                    <input type="radio" name="delivery-option" />
+                    Pick up (<b>0kr</b>)
+                    <p class="statusMessage"></p>
+                  </label>
+
+                  <label class="inputText">
+                    <input type="radio" name="delivery-option" />
+                    Home delivery( <b>50kr</b>)
+                    <p class="statusMessage"></p>
+                  </label>
+                </label>
+
+                <label>
+                  <span> Payment</span>
+                  <label class="inputText">
+                    <input type="radio" name="payment-option" />
+                    MobilePay
+                    <p class="statusMessage"></p>
+                  </label>
+
+                  <label class="inputText">
+                    <input type="radio" name="payment-option" />
+                    Cash on delivery
+                    <p class="statusMessage"></p>
+                  </label>
+                </label>
+              </div>
+            </section>
+            <button class="submitBtn" type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </article>
     </main>
 
     <footer>

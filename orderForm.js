@@ -5,6 +5,7 @@ let ordDetail = {
   size: "",
   flavour: "",
   deliveryDate: "",
+  email: ""
 };
 
 let success;
@@ -37,7 +38,7 @@ function validate(field) {
   // jodi input or select hoy tahole sudu validation korbe
   // jodi onno kichu hoy tahole if er modde dikbe na and validation korte hobe na
   // tai
-  if (field.nodeName == "INPUT" || field.nodeName == "SELECT") {
+  if (field.nodeName === "INPUT" || field.nodeName == "SELECT") {
    
     field.nextElementSibling.textContent = "";
 
@@ -64,6 +65,27 @@ function validate(field) {
     }
   }
 
+   if (field.type === "email") {
+     const indexOfAt = field.value.indexOf("@");
+     const indexOfDot = field.value.indexOf(".");
+     if (
+       indexOfAt === -1 ||
+       indexOfAt === 0 ||
+       indexOfAt === field.value.length - 1 ||
+       indexOfDot === -1 ||
+       indexOfDot === 0 ||
+       indexOfDot === field.value.length - 1 ||
+       indexOfDot < indexOfAt ||
+       indexOfAt === indexOfDot - 1
+     ) {
+       field.nextElementSibling.textContent =
+         "write correct email address!";
+       success = false;
+     }else{
+        ordDetail.email = field.value;
+     }
+   }
+
   if (field.name === "phone") {
     if (
       isNaN(field.value) ||
@@ -71,10 +93,10 @@ function validate(field) {
       field.value.length < field.minlength
     ) {
       field.nextElementSibling.textContent =
-        "Du skal skrive en korrekt telephone number din nar!";
+        "write correct phone number!";
       success = false;
     }else{
-      ordDetail.phoneNumber = field.value
+      ordDetail.phoneNumber = field.value;
     }
   }
 
