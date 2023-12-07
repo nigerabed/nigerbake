@@ -34,7 +34,12 @@ function submitHandler(event) {
  
 }
 
+/**
+ * Validates an input field HTML element depending on type, and displays validation text on next sibling
+ * @param {HTMLElement} field 
+ */
 function validate(field) {
+  console.log(field);
   // jodi input or select hoy tahole sudu validation korbe
   // jodi onno kichu hoy tahole if er modde dikbe na and validation korte hobe na
   // tai

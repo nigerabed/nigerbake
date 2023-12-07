@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Niger's Bake</title>
-    <script src="script.js"></script>
+
+    <script defer src="script.js"></script>
+
     <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Dancing+Script&family=Gluten:wght@300&family=Merriweather+Sans:ital@1&family=Montserrat:wght@500&display=swap"
@@ -23,7 +25,7 @@
   </head>
   <body>
     <!-- <div class="image"><img src="weddingPicture/heart.jpg.jpeg" alt=""></div>  -->
-   
+
     <header>
       <div id="logo-bar">
         <div id="logo"><a href="index.html">Niger Bake</a></div>
@@ -38,11 +40,10 @@
             <div class="dropdown">
               <a href="">Flavours</a>
               <div class="dropdown-content">
-                <p><a href="flavour/chocklate.html">Choklate</a></p>
-                <p><a href="flavour/vanilla.html">Vanilla</a></p>
-                <p><a href="flavour/redVelvet-html">Red velvet</a></p>
-                <p><a href="flavour/lemon.html">Lemon</a></p>
-                <p><a href="flavour/caramel.html">Caramel</a></p>
+                <p><a href="flavour-html/chocklate.html">Choklate</a></p>
+                <p><a href="flavour-html/vanilla.html">Vanilla</a></p>
+                <p><a href="flavour-html/lemon.html">Lemon</a></p>
+                <p><a href="flavour-html/caramel.html">Caramel</a></p>
               </div>
             </div>
           </li>
@@ -53,14 +54,35 @@
             <a href="birthdayCake.html"><span>Kids birthday Cake</span></a>
           </li>
           <li>
-            <a href=""><span>Other cake</span></a>
+            <a href="otherCake.html"><span>Other cake</span></a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section id="slide-section">
+
+         <!-- <section class="image-container">
+            <button class="prev-button"><i class='bx bxs-chevron-left bx-md' ></i></button>
+            <img src="pictures/bigPic.jpg.jpg" id="selected" alt="">
+            <button class="next-button"><i class='bx bxs-chevron-right bx-md' ></i></button>
+            <div class="radio-buttons">
+                <input type="radio" id="img1">
+                <input type="radio" id="img2">
+                <input type="radio" id="img3">
+               
+            </div>
+        </section> -->
+
+      <div id="ImageDiv">
+        <img id="cupcake" src="pictures/bigPic.jpg.jpg" alt="" />
+        <div id="smallImg">
+          <img class="smallPic" data-pic="pictures/dinoSlide.jpg.jpeg"  src="pictures/dinoSlide.jpg.jpeg" />
+          <img class="smallPic" data-pic="pictures/flamingo.jpg.jpeg" src="pictures/flamingo.jpg.jpeg" alt="" />
+          <img class="smallPic" data-pic="pictures/mario.jpg.jpeg" src="pictures/mario.jpg.jpeg" alt="" />
+        </div>
+      </div>
+      <!-- <section id="slide-section">
         <div id="slide">
           <div>
             <img src="pictures/dinoSlide.jpg.jpeg" alt="" />
@@ -72,7 +94,7 @@
             <img src="pictures/mario.jpg.jpeg" alt="" />
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section id="categorySection">
         <a href=""

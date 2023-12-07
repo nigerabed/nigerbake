@@ -16,3 +16,13 @@ main img{
       height: 25em;
       margin: 1em;
 }
+
+.birthdayCakePage div span{
+  
+    font-size: 1.5em;
+
+}
+
+.birthdayCakePage div{
+    text-align: center;
+}
