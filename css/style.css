@@ -19,26 +19,7 @@ main {
   border-radius: 1em;
 }
 
-/* #slide {
-  width: 100%;
-  display: flex;
-}
-#slide div {
-  padding: 2em;
-}
-#slide img {
-  width: 25em;
-}
-#slide-section {
-  box-shadow: 0 4px 2px -2px hsla(0, 0%, 76.9%, 0.25);
-  margin-bottom: 1em;
-}
-#slide-section img {
-  height: 26em;
-  object-fit: cover;
-  border-radius: 1em;
-  border: 1px solid #898686;
-} */
+
 
 #categorySection{
    background-color: rgb(241, 236, 236);
@@ -57,7 +38,7 @@ section h2{
 #category {
   margin-top: 1em;
   display: flex;
-  /* background-color: rgb(241, 236, 236); */
+  background-color: rgb(241, 236, 236);
   padding: 1em;
 }
 #category img {
@@ -88,41 +69,33 @@ section h2{
   box-shadow: 0 4px 2px -2px hsla(0, 0%, 76.9%, 0.25);
 }
 
+/*  picture slide section starts */
 
-
-#ImageDiv {
-  margin-bottom: 4em;
-  width: 100%;
-
-}
-
-#selected{
-    height: 25em;
-  width: 100%;
-}
-
-#ImageDiv img {
-  height: 25em;
-  width: 100%;
-   border-radius: 1em;
-   object-fit: cover;
-  /* width: 70%; */
-
-  border: 1px solid black;
-}
-
-#smallImg {
+.container{
   display: flex;
-
-  justify-content: space-between;
-  width: 15%;
-
+  width: 90vw;
+ 
 }
 
-#smallImg img {
-  height: 1em;
-  width: 1em;
-  border: 2px solid black;
-   border-radius: 50%;
+.panel{
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+    background-color: #eeeaea;
 }
+
+.panel.active{
+  flex: 5;
+}
+
+
+
 
