@@ -60,7 +60,7 @@ nav ul li a {
   text-align: center;
   color: #000;
   width: 100%;
-  display: block;
+  display: inline;
 }
 
 

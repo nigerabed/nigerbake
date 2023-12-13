@@ -19,20 +19,17 @@ main {
   border-radius: 1em;
 }
 
-
-
-#categorySection{
-   background-color: rgb(241, 236, 236);
+#categorySection {
+  background-color: rgb(241, 236, 236);
 }
 
-section h2{
-    padding-left: 1em;
-    padding-top: 1em;
-    color: rgb(128, 64, 41);
-   
+section h2 {
+  padding-left: 1em;
+  padding-top: 1em;
+  color: rgb(128, 64, 41);
 }
-#categorySection a h2 span:hover{
-    border-bottom: 2px solid red;
+#categorySection a h2 span:hover {
+  border-bottom: 2px solid red;
 }
 
 #category {
@@ -45,10 +42,10 @@ section h2{
   width: 15em;
   height: 18em;
   object-fit: cover;
-    border-radius: 1em;
+  border-radius: 1em;
   border: 1px solid #898686;
-
 }
+
 #category a {
   text-decoration: none;
 }
@@ -71,13 +68,12 @@ section h2{
 
 /*  picture slide section starts */
 
-.container{
+.container {
   display: flex;
   width: 90vw;
- 
 }
 
-.panel{
+.panel {
   background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -89,13 +85,9 @@ section h2{
   margin: 10px;
   position: relative;
   transition: flex 0.7s ease-in;
-    background-color: #eeeaea;
+  background-color: #eeeaea;
 }
 
-.panel.active{
+.panel.active {
   flex: 5;
 }
-
-
-
-
